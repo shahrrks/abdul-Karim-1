@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{floatflt,epsfig}
+\usepackage{ngerman}
+\usepackage{amssymb, amsmath}
+\usepackage{hyperref}
+\usepackage{tikz,pgfplots}
+\usepackage{qrcode} 
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Verteifungsseminar Bachelor}
+\lhead{Frequenzteiler}
+\rfoot{Seite \thepage}
+
+
+\begin{document}
+
+% ben --> begin enumerate 
+% bit --> begin Itemize 
+% sse --> section 
+% sss --> subsection 
+% ss2 --> subsubsection 
+%@(\left(  \right)
+%@{\left\{  \right}
+%@[\left[  \right]
+
+\section{Was ist der Frequenzteiler \textbf{Definition}}
+
+\subsection{Definition}
+Bei Frequenzteiler handelt es sich um Schaltungen, die aus einem Signal mit gegebner Frequenz am Eingang ein gewunschtes Signal mit geringer Frequez an den Ausgang weiterleiten. 
+\vspace*{2cm}
+Der Eingangsfrequenz dividiert auf den Ausgangsfrequenzu ergibt sich Teiler Verhältnis \[ V = \frac{F_E}{F_T}  \]
+
+\section{Anwendung}
+Digital-elektronisch Frequenzteiler sind weit verbreitet. Sie befinden sich beispielsweise bei: QuarzUhren, Rechnern und der in Taktgeneratoren in den PLLs(Phasen Regel Schleibe)
+
+Bei Frequenzteiler muss man zwischen folgendenen Typen unterschieden
+
+\begin{itemize}
+    \item AsynchronFrequenzteiler
+    \item Synchronfrequenzteiler 
+\end{itemize}
+
+Die Frequenzteiler arbeiten fast immer Asynchron und dadurch ergibt sich ein sehr einfacher Aufgau im Vergleich zur synchron Frequenzteilt. Es gibt aber Synchronfrequenz obwohl sie komplexer beider Aufbau ist, diese Art vom Frequenzteiler genauer. 
+\\
+
+Die Aufgabe von Frequenzteiler ist die Verringerung einer bestimmten Eingangsfrequenz auf gewünschten Ausgangsfrequenz, d.h. durch Hinter eingander Schalten von beliebige vielen FFs lässt sich eine Vorhandende Frequenz beliebig oft halbieren. So wird Z.B. die Quarzstabile Uhrenfrequenz von 32768 Hz durch 15 Flipflops :\( 2^{15} = 32768 Hz  \) auf die Sekundenanzeige heruntergeteilt. 
+\\
+Frequenzteiler bestehen aus einer beliebigen Anzahl vom hintereinandergeschaltete Flipflops, die man durch entsprechende Rucksetzbedienungen beeinflussen kann, sodass man nicht mehr an eine direkt Frequenzhalbierer durch einzelne FFs gebunden ist. 
+\\
+Ein einzelnes Flipflops erzeugt eine Frequenzteilung im Verhalten 2:1 mit zwei FFs kann ein Frequenzteiler für Verhältnis 4:1 \( 2^2 = 4  \) aufgebaut werden. \\
+Die meisten Frequenzteiler haben ein festes ganzzahliges Teilerverhältnis. Es gibt Asynchron und Synchrone Frequenzteiler. Sie unterschieden sich, wie die Dualzähler in linearer zustandsgesteuert und taktgesteuerten Verarbeitung.\\
+Grundsätzlich eignet sich jeder Asynchron Dualzähler und jeder Synchrone Dualzähler als Asynchron bzw. Synchrone Frequenzteiler. Dann gibt es noch einstellbare Frequenzteiler, die über zusätzliche Eingänge verfügen. Über die Eingänge wird das Teilerverhältnis bestimmt. Man nennt sie Programmierbare Frequenzteiler.
+\vspace*{5cm}
+\[ 2^3 = 8  \]
+
+Die Schaltung mit dazugehörigen Zeitablaufdiagram zeitgt einen Asynchron 3-Bit-Dual-Vorwärtszähler mit einem Teilerverhältnis von 8:1. Das Eingangssignal(E) wird duch das erste Flipflop durch zwei geteilt(\( Q_0\)
+Das Zweite Flipflops teilt das Signal wiederum durch Zwei(\( Q_1  \), wodurch ein Teilerverhältnis 4:1 entsteht. 
+Das dritte Flipflops teilt das Signal nochmals durch zwei(\( Q_2  \)). Es entsteht ein Teilerverhältnis von 8:1. 
+Die PÜeriode das Eingangssignal passt 8 mal in das Augangssignal \( Q_2  \), 
+\vspace*{7cm}
+
+Zur Berechnung das Teilerverhältnisses: 
+Mit dieser Formel werden Tieler verhaltnisse nach der Zweipotenzreihe berechnet(2,4,8,16 .... ) will man ein ungerades Teilerverhältnis, dann müssen die Rücksetzeingänge der Flipflop beschaltet \[ F_t = \frac{F_E}{2^n}  \]
+\( f_e = Eingangsfrequenz  \) \\
+\( f_t =  geteilte Frequenz \) \\
+bzw. n : Anzahl der Flipflops 
+
+\subsection{Synchrone Frequenzteiler}
+Alle Synchrone getakteten Dualzähler lassen sich als Frequenzteiler mit festen \( 2^n  \)- Teilerverhältnis nutzen. Mit geeigneten zusatzschaltungen und durch zum Teil getrennte Ansteurungen der J-K-Eingänge einzelner Speicher Flipflops sind auch andere Teilerverhältnisse entlang der Zählerstufen nicht addieren. Die Synchron Dual- und BCD-Teiler erkäaren sich aus den Zeitablaufdiagram der entsprechenden Zählerschaltungen. 
+Das folgende Bild zeigt 3:1 Synchronteiler, links mit JK-MS-FF und rechts mit D-FF aufgebaut. Das Zeitablaufdiagramm des mit D-FF aufgebauten Synchronteilers wäre identisch, aber um einen halben Eingangstakt nach rechts verschoben.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{teiler5}
+\caption{Zeitablaufdiagramm für JK-MS-Schaltung}
+\label{fig:Zeitablaufdiagramm für JK-MS-Schaltung}
+\end{figure}
+
+Zu Beginn sind die Q-nicht Pegel des SN 74107N High. Der Master des ersten Flipflops wird mit positiver Taktflanke gesetzt und bei fallender Flanke wechselt der Q0 Pegel auf High. Der zweite Takt setzt Q1 des zweiten Flipflops auf High und Q1-nicht, das Eingangssignal des ersten Flipflops auf Low. Am Ende des dritten Takts wird somit auch das zweite Flipflop zurück gesetzt und ein neuer Zyklus beginnt.
+
+Der mit D-FF aufgebaute Synchronteiler wird mit positiver Taktflanke gesteuert. In der Annahme, dass zu Beginn beide Q-nicht Ausgänge High Pegel haben, wird vom UND Gatter bestimmt das erste Flipflop gesetzt. An Q1 und damit am Eingang des zweiten Flipflops liegt High Pegel, während Q1-nicht mit Low Pegel das UND Gatter sperrt. Der zweite Takt setzt mit steigender Flanke Q2 auf High und Q1 auf Low. Mit dem dritten Takt wird Q2 auf Low und Q2-nicht auf High gesetzt. Zu Beginn des vierten Takts ist das UND Gatter gesetzt und das erste Flipflop kann erneut kippen. Für den Q1-Ausgang beginnt nach dem dritten Takt ein neuer Zyklus. Um einen Takt verschoben ist dieser Zyklus dann auch am Q2-Ausgang vorhanden.
+
+\end{document}
