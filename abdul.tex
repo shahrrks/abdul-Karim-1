@@ -104,4 +104,67 @@ Zu Beginn sind die Q-nicht Pegel des SN 74107N High. Der Master des ersten Flipf
 
 Der mit D-FF aufgebaute Synchronteiler wird mit positiver Taktflanke gesteuert. In der Annahme, dass zu Beginn beide Q-nicht Ausgänge High Pegel haben, wird vom UND Gatter bestimmt das erste Flipflop gesetzt. An $Q_1$ und damit am Eingang des zweiten Flipflops liegt High Pegel, während $Q_1$-nicht mit Low Pegel das UND Gatter sperrt. Der zweite Takt setzt mit steigender Flanke $Q_2$ auf High und $Q_1$ auf Low. Mit dem dritten Takt wird $Q_2$ auf Low und $Q_2$-nicht auf High gesetzt. Zu Beginn des vierten Takts ist das UND Gatter gesetzt und das erste Flipflop kann erneut kippen. Für den $Q_1$-Ausgang beginnt nach dem dritten Takt ein neuer Zyklus. Um einen Takt verschoben ist dieser Zyklus dann auch am $Q_2$-Ausgang vorhanden.
 
+\pagebreak
+\section{Einfache dynamische Frequenzteiler}
+Dynamische Schaltungstechnik wird meistens mit Mos Technologien realisiert
+
+Die Signale speichernden Knoten sind als Kapazität gegen das Massenpotential ausgebildet und dort abgespeicherte Informationen muss innerhalb einer bestimmten Zeitspanne ausgewertet und regeneriert werden.
+
+Diese Schaltungen sind für Hochfrequenz Bereich direkt einsetzbar. Wobei der erforderliche Große Signal Eingangspegel störend wirkt.
+
+Bei höherer Frequenz “auf dem Chip Signale ” ist oftmals mit erheblichen Mehr Verlustleistung verbunden als die eigentliche Frequenzteiler Schaltungen als DC Verlustleistung benötigt. Eine der gebräuchlichsten Dynamische DFF Schaltung in diesem Bild. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Dynamische Frequenz teilesr.PNG}
+\caption{DFF dynamische Frequenzteiler}
+\label{fig:DFF dynamische Frequenzteiler}
+\end{figure}
+Dynamische Frequenzteiler sind störfällig gegen Betriebstemperatuschwankungen.
+
+\section{Standard Flipflop Frequenzteiler}
+Werden CMOS Gatter als Frequenzteiler verwendet, so ist der Arbeitspunktstrom bei sehr kleinen Frequenzen nahezu vernachlässigbar , denn es fließen in wesentlichen nur die Sperrdunkelstrom der entsprechenden Transistoren in den eingestellten Nichtgleichgewichtszustand.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{standardfrequenzteiler.PNG}
+\caption{Standard CMOS Inverter}
+\label{fig:Standard CMOS Inverter}
+\end{figure}
+
+Für diesen Frequenzteiler ist der Bereich des Frequenzens bis in den Bereich von einigen hundert MHz eingeschränkt .Der Grund dafür: da die Standard CMOS Gatter den vollen logischen Pegel hub benötigt. Diese Frequenzgrenze wird durch immer kürzere Kanallängen heraufgeschoben (z.B.  180 nm  1 GHz... 1.5 GHz, vgl.
+
+Schätzungen Bild 2 Analog zu den dynamischen Schaltungstechniken vergrößert sich erforderliche Verlustleistung.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{verlustleistung seminar.PNG}
+\caption{Verlustleistung eines einzelnen CMOS Inverters als Funktion der Frequenz}
+\label{fig:Verlustleistung eines einzelnen CMOS Inverters als Funktion der Frequenz}
+\end{figure}
+\vspace*{2cm}
+
+\section{GML Frequenzteiler}
+Frequenzteiler in diesem GML (eng Current Mode logic,Deutsch Logik konstantem Strom) sind für höhere Frequenzen vor allem im Bereich der Bipolaren Schaltungen dominierend.
+
+Diese Art von Schaltungen sind auch für CMOS anwendbar und liefert sehr Stabil arbeitende Schaltungen
+
+Die Eingangsempfindlichkeit kann sehr groß werden und durch die symmetrische Schaltungsaulegung sind diese Frequenzteiler relativ unempfindlich gegen eingekoppelte Störungen generieren diese Schaltungen zudem erheblich weniger Substratrauschen als Standard CMOS Logikgätter.
+
+Das ist ein wesentliches Kriterium für den Einsatz in integrierten Transceivern Chips mit einem Dynamik Bereich von $< 80 \ dB$. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{GML FREQuenzteiler.PNG}
+\caption{GML Frequenzteiler}
+\label{fig:GML Frequenzteiler}
+\end{figure}
+\vspace*{2cm}
+
+\section{Programmierbarer frequenzteiler}
+Er ist ein einstellbarer Frequenzteiler, die über zusätzliche Eingänge verfügen.
+
+Über die Eingänge wird das Teilverhältniss bestimmt
+
+Er enthält einen Impuls Zähler, der sich aus Kaskade geschalteten TFFS zusammengesetzt. Der Impulszähler wird zunächst auf ein gewünschtes Teilverhältniss voreingeschtellt .Wenn der Impulszähler auf null heruntergezählt hat, wird er erneut auf das Teiler Verhältnis voreingestellt.
 \end{document}
