@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.21)  3 JUN 2021 21:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.21)  3 JUN 2021 21:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,8 +8,8 @@ entering extended mode
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
 \c@section=\count168
@@ -598,7 +598,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: 1.png Graphic file (type png)
 <use 1.png>
 Package pdftex.def Info: 1.png  used on input line 37.
-(pdftex.def)             Requested size: 312.00119pt x 105.0851pt.
+(pdftex.def)             Requested size: 288.0011pt x 97.00163pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
@@ -606,7 +606,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 14.49998pt.
+Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
@@ -617,18 +617,18 @@ This may cause the page layout to be inconsistent, however.
 File: 2.png Graphic file (type png)
 <use 2.png>
 Package pdftex.def Info: 2.png  used on input line 66.
-(pdftex.def)             Requested size: 312.00119pt x 92.37698pt.
- [2 </Users/rrks/Documents/GitHub/abdul-Karim-1/2.png>]
-<3.png, id=61, 361.35pt x 163.20975pt>
+(pdftex.def)             Requested size: 288.0011pt x 85.2712pt.
+<3.png, id=54, 361.35pt x 163.20975pt>
 File: 3.png Graphic file (type png)
 <use 3.png>
 Package pdftex.def Info: 3.png  used on input line 81.
-(pdftex.def)             Requested size: 312.00119pt x 140.92046pt.
+(pdftex.def)             Requested size: 288.0011pt x 130.08234pt.
+ [2 </Users/rrks/Documents/GitHub/abdul-Karim-1/2.png>]
 <teiler5.png, id=62, 612.2875pt x 361.35pt>
 File: teiler5.png Graphic file (type png)
 <use teiler5.png>
 Package pdftex.def Info: teiler5.png  used on input line 98.
-(pdftex.def)             Requested size: 312.00119pt x 184.13167pt.
+(pdftex.def)             Requested size: 288.0011pt x 169.96686pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -638,10 +638,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Dynamische Frequenz teilesr.PNG Graphic file (type png)
 <use Dynamische Frequenz teilesr.PNG>
 Package pdftex.def Info: Dynamische Frequenz teilesr.PNG  used on input line 119.
-(pdftex.def)             Requested size: 312.00119pt x 262.72772pt.
+(pdftex.def)             Requested size: 288.0011pt x 242.51662pt.
 
-Overfull \hbox (5.08342pt too wide) in paragraph at lines 123--124
-[]\OT1/cmr/m/n/12 Dynamische Fre-quenz-tei-ler sind st[]orf[]allig ge-gen Be-trieb-stem-pe-ra-tuschwan-
+Overfull \hbox (8.9212pt too wide) in paragraph at lines 123--124
+[]\OT1/cmr/m/n/10.95 Dynamische Fre-quenz-tei-ler sind st[]orf[]allig ge-gen Be-trieb-stem-pe-ra-tuschwan-
  []
 
 [5 </Users/rrks/Documents/GitHub/abdul-Karim-1/Dynamische Frequenz teilesr.PNG>]
@@ -649,12 +649,12 @@ Overfull \hbox (5.08342pt too wide) in paragraph at lines 123--124
 File: standardfrequenzteiler.PNG Graphic file (type png)
 <use standardfrequenzteiler.PNG>
 Package pdftex.def Info: standardfrequenzteiler.PNG  used on input line 130.
-(pdftex.def)             Requested size: 312.00119pt x 215.5693pt.
+(pdftex.def)             Requested size: 288.0011pt x 198.9863pt.
 <verlustleistung seminar.PNG, id=83, 638.98724pt x 446.8695pt>
 File: verlustleistung seminar.PNG Graphic file (type png)
 <use verlustleistung seminar.PNG>
 Package pdftex.def Info: verlustleistung seminar.PNG  used on input line 141.
-(pdftex.def)             Requested size: 312.00119pt x 218.19746pt.
+(pdftex.def)             Requested size: 288.0011pt x 201.4099pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -664,10 +664,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: GML FREQuenzteiler.PNG Graphic file (type png)
 <use GML FREQuenzteiler.PNG>
 Package pdftex.def Info: GML FREQuenzteiler.PNG  used on input line 158.
-(pdftex.def)             Requested size: 312.00119pt x 218.0517pt.
+(pdftex.def)             Requested size: 288.0011pt x 201.27574pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (2.8104pt too wide) in paragraph at lines 165--166
+\OT1/cmr/m/n/10.95 Er ist ein ein-stell-ba-rer Fre-quenz-tei-ler, die []uber zus[]atz-li-che Eing[]ange verf[]ugen. 
+ []
 
 [7 </Users/rrks/Documents/GitHub/abdul-Karim-1/verlustleistung seminar.PNG>] [8 </Users/rrks/Documents/GitHub/abdul-Karim-1/GML FREQuenzteiler.PNG>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
@@ -684,15 +689,15 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
  ) 
 Here is how much of TeX's memory you used:
- 28523 strings out of 480608
- 676564 string characters out of 5903630
+ 28522 strings out of 480608
+ 676573 string characters out of 5903630
  1050628 words of memory out of 5000000
- 43897 multiletter control sequences out of 15000+600000
- 538531 words of font info for 47 fonts, out of 8000000 for 9000
+ 43898 multiletter control sequences out of 15000+600000
+ 538537 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,12n,98p,803b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on /Users/rrks/Documents/GitHub/abdul-Karim-1/abdul.pdf (8 pages, 263662 bytes).
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on /Users/rrks/Documents/GitHub/abdul-Karim-1/abdul.pdf (8 pages, 267094 bytes).
 PDF statistics:
  135 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams
