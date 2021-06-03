@@ -40,7 +40,7 @@ Der Eingangsfrequenz dividiert auf den Ausgangsfrequenzu ergibt sich Teiler Verh
 \end{figure}
 
 
-\section{Anwendung}
+\subsection{Anwendung}
 Digital-elektronisch Frequenzteiler sind weit verbreitet. Sie befinden sich beispielsweise bei: QuarzUhren, Rechnern und der in Taktgeneratoren in den PLLs(Phasen Regel Schleibe)
 
 Bei Frequenzteiler muss man zwischen folgendenen Typen unterschieden
@@ -85,11 +85,11 @@ Die PÜeriode das Eingangssignal passt 8 mal in das Augangssignal \( Q_2  \),
 
 Zur Berechnung das Teilerverhältnisses: 
 Mit dieser Formel werden Tieler verhaltnisse nach der Zweipotenzreihe berechnet(2,4,8,16 .... ) will man ein ungerades Teilerverhältnis, dann müssen die Rücksetzeingänge der Flipflop beschaltet \[ F_t = \frac{F_E}{2^n}  \]
-\( f_e = Eingangsfrequenz  \) \\
-\( f_t =  geteilte Frequenz \) \\
-bzw. n : Anzahl der Flipflops 
+\( F_e = Eingangsfrequenz  \) \\
+\( F_t =  geteilte Frequenz \) \\
+\( n   = Anzahl der Flipflops \) \\
 
-\subsection{Synchrone Frequenzteiler}
+\section{Synchrone Frequenzteiler}
 Alle Synchrone getakteten Dualzähler lassen sich als Frequenzteiler mit festen \( 2^n  \)- Teilerverhältnis nutzen. Mit geeigneten zusatzschaltungen und durch zum Teil getrennte Ansteurungen der J-K-Eingänge einzelner Speicher Flipflops sind auch andere Teilerverhältnisse entlang der Zählerstufen nicht addieren. Die Synchron Dual- und BCD-Teiler erkäaren sich aus den Zeitablaufdiagram der entsprechenden Zählerschaltungen. 
 Das folgende Bild zeigt 3:1 Synchronteiler, links mit JK-MS-FF und rechts mit D-FF aufgebaut. Das Zeitablaufdiagramm des mit D-FF aufgebauten Synchronteilers wäre identisch, aber um einen halben Eingangstakt nach rechts verschoben.
 
@@ -142,7 +142,8 @@ Schätzungen Bild 2 Analog zu den dynamischen Schaltungstechniken vergrößert s
 \caption{Verlustleistung eines einzelnen CMOS Inverters als Funktion der Frequenz}
 \label{fig:Verlustleistung eines einzelnen CMOS Inverters als Funktion der Frequenz}
 \end{figure}
-\vspace*{2cm}
+\vspace*{9cm}
+
 
 \section{GML Frequenzteiler}
 Frequenzteiler in diesem GML (eng Current Mode logic,Deutsch Logik konstantem Strom) sind für höhere Frequenzen vor allem im Bereich der Bipolaren Schaltungen dominierend.
@@ -159,7 +160,7 @@ Das ist ein wesentliches Kriterium für den Einsatz in integrierten Transceivern
 \caption{GML Frequenzteiler}
 \label{fig:GML Frequenzteiler}
 \end{figure}
-\vspace*{2cm}
+\vspace*{3cm}
 
 \section{Programmierbarer frequenzteiler}
 Er ist ein einstellbarer Frequenzteiler, die über zusätzliche Eingänge verfügen.
